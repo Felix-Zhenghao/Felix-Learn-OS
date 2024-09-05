@@ -1,0 +1,14 @@
+**/.*/*
+!.github/*
+!.cargo/*
+
+**/target
+**/Cargo.lock
+/os*/src/link_app.S
+/os/last-*
+
+tools
+workplace/
+
+qemu-*/
+riscv64-*/
