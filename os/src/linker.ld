@@ -2,6 +2,8 @@ OUTPUT_ARCH(riscv)
 ENTRY(_start)
 BASE_ADDRESS = 0x80200000; /* kernel初始位置 */
 
+/* 语法规则：<文件名>(<段名1> <段名2> ...) */
+
 SECTIONS
 {
     . = BASE_ADDRESS;

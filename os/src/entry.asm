@@ -1,9 +1,11 @@
+    # .text.entry section开始
     .section .text.entry
     .globl _start
 _start:
     la sp, boot_stack_top
     call rust_main
 
+    # 上一个section结束。.bss.stack section开始
     .section .bss.stack
     .globl boot_stack_lower_bound
 
